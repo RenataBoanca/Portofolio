@@ -1,0 +1,149 @@
+:root {
+    --main-color: #829995;
+    --secondary-color: #436962;
+    --text-color1: #003B2F;
+    --text-color2: #19463D;
+    --contrast-color: #5C2400;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: var(--main-color);
+}
+
+/* Header styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: var(--secondary-color);
+    z-index: 1;
+}
+h1 {
+    font-family: Consolas, "Trebuchet MS", Verdana, sans-serif;
+    font-size: clamp(1.2rem, 8vw, 2rem);
+    margin: 0.8rem;
+    text-align: center;
+    color: var(--contrast-color);
+    text-shadow: 0 0 5px var(--main-color);
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+/* Home page styles */
+
+#home {
+    height: 100vh;
+    background-color: var(--main-color);
+    color: #ffffff;
+    background: linear-gradient(var(--secondary-color), var(--main-color));
+}
+.portofolio {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.myName {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 -1px 5px var(--text-color1);
+    color: #ffffff;
+}
+
+/* About & Skills page styles */
+
+h2 {
+    text-align: center;
+    color: var(--text-color1);
+    margin: 30px auto;
+}
+.aboutMe {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--text-color2);
+}
+h3 {
+    text-align: center;
+    color: var(--text-color2);
+}
+.coursesList {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    line-height: 1.8;
+}
+.coursesList a {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+.coursesList a:hover {
+    color: var(--text-color1);
+    text-decoration: underline;
+}
+.certificatesImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.certificatesImg img {
+    padding: 10px;
+    max-width: 500px;
+    height: auto;
+    flex: 1;
+}
+.softSkills,
+.technicalSkills {
+    padding: 5px;
+    line-height: 1.5;
+    color: var(--text-color1);
+}
+abbr {
+    text-decoration: none;
+}
+
+/* Footer styles */
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}   
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    list-style: none;
+    padding: 0;
+}
+hr {
+    height: 2px;
+    background: var(--contrast-color);
+    border: 0;
+    margin: 0 5px;
+}
+.footer a:hover {
+    cursor: pointer;
+}
