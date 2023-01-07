@@ -49,6 +49,19 @@ h1 {
     color: var(--text-color1);
 }
 
+@media (min-width: 1150px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    .navbar ul {
+        position: initial;
+        width: 50vw;
+    }
+}
+
 /* Home page styles */
 
 #home {
@@ -121,6 +134,54 @@ h3 {
 }
 abbr {
     text-decoration: none;
+}
+
+@media (min-width: 800px) {
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+        gap: 10px;
+    }
+    .aboutMeTitle {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    .aboutMe {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        max-width: 400px;
+        padding: 0 5vw;
+    }
+    .professionalCourses {
+        grid-column: 2;
+        grid-row: 2 / 3;;
+    }
+    .certificates {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+}
+@media (min-width: 1000px) {
+    #skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+        gap: 10px;
+        padding: 0 5vw;
+    }
+    .mySkillsTitle {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    .softSkills {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .technicalSkills {
+        grid-column: 2;
+        grid-row: 2;
+    }
 }
 
 /* Footer styles */
